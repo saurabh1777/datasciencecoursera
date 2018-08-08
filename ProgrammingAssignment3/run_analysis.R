@@ -82,6 +82,5 @@ Xav_tidy <- dcast(X_melt, subject + activity ~ ..., mean)
 
 ## Xav_tidy is now the tidy dataset required. Now return it and we're done
 
-return(Xav_tidy)
-
-}
+##Xav_tidy
+write.table(Xav_tidy, "tidy.txt", row.names = FALSE)
